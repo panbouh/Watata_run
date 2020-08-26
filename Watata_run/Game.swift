@@ -10,18 +10,20 @@ import Foundation
 
 class	Game  //crash if many bike have same name
 {
-	//	var P1: Player
-	//	var P2: Player
+	private var Player1: Player?
+	private var Player2: Player?
 	
 	//	init() {
 	//		create()
 	//	}
 	
-	func start(player1 P1: Player, player2 P2: Player) {
+	//	func start(player1 P1: Player, player2 P2: Player) {
+	func start() {
 		print("ALLLRIIIGTH! LET THE RUN BEGIIIIIIIIIIIIIIIIN\n")
 		
 		var whoTurn = true
-		
+		guard let P1 = Player1 else {return}
+		guard let P2 = Player2 else {return}
 		repeat {
 			
 			if (whoTurn) {// P1 Turn
@@ -51,9 +53,9 @@ class	Game  //crash if many bike have same name
 		
 		let boostChest = Bool.random()
 		
-
-		guard let bam = attak.motoInLife.first else {print("BAM ERROR"); exit(-1)}
-		guard let aie = victim.motoInLife.first else {print("AIE ERROR"); exit(-1)}
+		
+		guard let bam = attak.motoInLife.first else {return}
+		guard let aie = victim.motoInLife.first else {return}
 		
 		let oldMotor = bam.motor
 		if boostChest {
@@ -87,15 +89,23 @@ class	Game  //crash if many bike have same name
 		let p2Team = selectTeam(who: p2Name)
 		
 		// Initialize PLayer
-		let P1 = Player(name: p1Name, team: p1Team)
-		let P2 = Player(name: p2Name, team: p2Team)
+		Player1 = Player(name: p1Name, team: p1Team)
+		Player2 = Player(name: p2Name, team: p2Team)
+		
+		guard let P1 = Player1 else {return}
+		guard let P2 = Player2 else {return}
+		
+		//		print("--------------- \(player1.name) ---------------")
+		//		player1.printMotoInLife()
+		//		print("--------------- \(player2.name) ---------------")
+		//		player2.printMotoInLife()
 		
 		print("--------------- \(P1.name) ---------------")
 		P1.printMotoInLife()
 		print("--------------- \(P2.name) ---------------")
 		P2.printMotoInLife()
 		
-		start(player1: P1, player2: P2)
+		//		start(player1: P1, player2: P2)
 	}
 	
 	func askName(message: String) -> String {
@@ -116,28 +126,28 @@ class	Game  //crash if many bike have same name
 		return name
 	}
 	
-	func createYamasaki() -> Moto {
+	func createYamasaki(name: String) -> Moto {
 		print("You choose yamasaki, right choice.\n")
 		
-		return Yamasaki(name: askName(message: "name your bike"))
+		return Yamasaki(name: name)
 	}
 	
-	func createNobrake() -> Moto {
+	func createNobrake(name: String) -> Moto {
 		print("You choose to not have no brake.\n")
 		
-		return Nobrake(name: askName(message: "name your bike"))
+		return Nobrake(name: name)
 	}
 	
-	func createDieudlapan() -> Moto {
+	func createDieudlapan(name: String) -> Moto {
 		print("You choose... ooooh... Hope you have a good mecanic man.\n")
 		
-		return Dieudlapan(name: askName(message: "name your bike"))
+		return Dieudlapan(name: name)
 	}
 	
-	func createMowerBrand() -> Moto {
+	func createMowerBrand(name: String) -> Moto {
 		print("You choose a mower, oh sorry.\n")
 		
-		return MowerBrand(name: askName(message: "name your bike"))
+		return MowerBrand(name: name)
 	}
 	
 	func selectTeam(who: String) -> [Moto] {
@@ -154,33 +164,50 @@ class	Game  //crash if many bike have same name
 				+ "4. Mowerbrand \n")
 			
 			var choice: Int
+			var check = true
+			var name: String
+
 			repeat {
 				choice = Tools.shared.readLineInt()
 			} while !(1...4 ~= choice)
-			
-			switch choice {
-			case 1:
-				team.append(createYamasaki())
-			case 2:
-				team.append(createNobrake())
-			case 3:
-				team.append(createDieudlapan())
-			case 4:
-				team.append(createMowerBrand())
-			default:
-				print("Error");
-			}
-		} while team.count < 3
-		
-		Tools.shared.testPrintTeam(team: team)
-		print("----------END\n----------") //debug
-		return team
-	}
+			//----------------------check les double nom-----------------------------
+			repeat {
+				name = askName(message: "name your bike")
+				
+				for moto in team {
+					print("\n\nAWDBWAKJBDKJHAWBDHJKAWBDKJWAB\n\n")
+					check = true
+					print("**********\(moto.name)************")
+					if moto.name == name {
+						print("name already taken, choose another")
+						check = false
+					}
+				}
+		} while check != true
+		//---------------------mais ca marche pas---------------------------------
+		switch choice {
+		case 1:
+			team.append(createYamasaki(name: name))
+		case 2:
+			team.append(createNobrake(name: name))
+		case 3:
+			team.append(createDieudlapan(name: name))
+		case 4:
+			team.append(createMowerBrand(name: name))
+		default:
+			print("Error");
+		}
+	} while team.count < 3
 	
-	
-	func displayWinner(win: Player, los: Player) {
-		print("win: \(win.name)\nlos: \(los.name)\n")
-	}
+	Tools.shared.testPrintTeam(team: team)
+	print("----------END\n----------") //debug
+	return team
+}
+
+
+func displayWinner(win: Player, los: Player) {
+	print("win: \(win.name)\nlos: \(los.name)\n")
+}
 }
 
 

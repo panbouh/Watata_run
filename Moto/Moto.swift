@@ -24,7 +24,7 @@ class Moto {
 	func gaz(target: Moto, player: Player) {			// Attaque
 		target.life -= motor.power
 		
-		print("\(self.name) attaque \(target.name) pour \(Motor.motor.power) damage\n")
+		print("\(self.name) attaque \(target.name) pour \(target.motor.power) damage\n")
 		
 		if target.life <= 0 {
 			target.life = 0
