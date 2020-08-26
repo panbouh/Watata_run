@@ -1,0 +1,357 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		13177D9624F3D2FF00E5915F /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13177D9524F3D2FF00E5915F /* Player.swift */; };
+		13177D9824F4545800E5915F /* VTwin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13177D9724F4545800E5915F /* VTwin.swift */; };
+		132C100B24F5841900C21608 /* Nobrake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132C100A24F5841900C21608 /* Nobrake.swift */; };
+		132C101024F5852900C21608 /* VFour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132C100F24F5852900C21608 /* VFour.swift */; };
+		132C101224F5858900C21608 /* FourCyl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132C101124F5858900C21608 /* FourCyl.swift */; };
+		132C101424F585A400C21608 /* Twin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132C101324F585A400C21608 /* Twin.swift */; };
+		132C101624F5863100C21608 /* Compressor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132C101524F5863100C21608 /* Compressor.swift */; };
+		132C101824F5873600C21608 /* Dieudlapan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132C101724F5873600C21608 /* Dieudlapan.swift */; };
+		132C101A24F587A100C21608 /* MowerBrand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132C101924F587A100C21608 /* MowerBrand.swift */; };
+		1332647424E5C6CF00A4ABFE /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1332647324E5C6CF00A4ABFE /* Game.swift */; };
+		1332647824E5CA4100A4ABFE /* Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1332647724E5CA4100A4ABFE /* Tools.swift */; };
+		1332647A24E82E6A00A4ABFE /* Moto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1332647924E82E6A00A4ABFE /* Moto.swift */; };
+		1332647C24E8355700A4ABFE /* Yamawaki.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1332647B24E8355700A4ABFE /* Yamawaki.swift */; };
+		134D211124E5C5A100A48968 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134D211024E5C5A100A48968 /* main.swift */; };
+		13A92E4424EAF9800037E4FF /* Motor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A92E4324EAF9800037E4FF /* Motor.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		134D210B24E5C5A100A48968 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		13177D9524F3D2FF00E5915F /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		13177D9724F4545800E5915F /* VTwin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTwin.swift; sourceTree = "<group>"; };
+		132C100A24F5841900C21608 /* Nobrake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nobrake.swift; sourceTree = "<group>"; };
+		132C100F24F5852900C21608 /* VFour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VFour.swift; sourceTree = "<group>"; };
+		132C101124F5858900C21608 /* FourCyl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourCyl.swift; sourceTree = "<group>"; };
+		132C101324F585A400C21608 /* Twin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Twin.swift; sourceTree = "<group>"; };
+		132C101524F5863100C21608 /* Compressor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Compressor.swift; sourceTree = "<group>"; };
+		132C101724F5873600C21608 /* Dieudlapan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dieudlapan.swift; sourceTree = "<group>"; };
+		132C101924F587A100C21608 /* MowerBrand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MowerBrand.swift; sourceTree = "<group>"; };
+		1332647324E5C6CF00A4ABFE /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		1332647724E5CA4100A4ABFE /* Tools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tools.swift; sourceTree = "<group>"; };
+		1332647924E82E6A00A4ABFE /* Moto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Moto.swift; sourceTree = "<group>"; };
+		1332647B24E8355700A4ABFE /* Yamawaki.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Yamawaki.swift; sourceTree = "<group>"; };
+		134D210D24E5C5A100A48968 /* Watata_run */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Watata_run; sourceTree = BUILT_PRODUCTS_DIR; };
+		134D211024E5C5A100A48968 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		13A92E4324EAF9800037E4FF /* Motor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Motor.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		134D210A24E5C5A100A48968 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		132C100C24F5849C00C21608 /* Moto */ = {
+			isa = PBXGroup;
+			children = (
+				1332647924E82E6A00A4ABFE /* Moto.swift */,
+				1332647B24E8355700A4ABFE /* Yamawaki.swift */,
+				132C100A24F5841900C21608 /* Nobrake.swift */,
+				132C101724F5873600C21608 /* Dieudlapan.swift */,
+				132C101924F587A100C21608 /* MowerBrand.swift */,
+			);
+			path = Moto;
+			sourceTree = "<group>";
+		};
+		132C100D24F584B900C21608 /* Motor */ = {
+			isa = PBXGroup;
+			children = (
+				13A92E4324EAF9800037E4FF /* Motor.swift */,
+				132C100F24F5852900C21608 /* VFour.swift */,
+				13177D9724F4545800E5915F /* VTwin.swift */,
+				132C101124F5858900C21608 /* FourCyl.swift */,
+				132C101324F585A400C21608 /* Twin.swift */,
+				132C101524F5863100C21608 /* Compressor.swift */,
+			);
+			path = Motor;
+			sourceTree = "<group>";
+		};
+		134D210424E5C5A100A48968 = {
+			isa = PBXGroup;
+			children = (
+				134D210F24E5C5A100A48968 /* Watata_run */,
+				132C100D24F584B900C21608 /* Motor */,
+				132C100C24F5849C00C21608 /* Moto */,
+				134D210E24E5C5A100A48968 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		134D210E24E5C5A100A48968 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				134D210D24E5C5A100A48968 /* Watata_run */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		134D210F24E5C5A100A48968 /* Watata_run */ = {
+			isa = PBXGroup;
+			children = (
+				134D211024E5C5A100A48968 /* main.swift */,
+				1332647324E5C6CF00A4ABFE /* Game.swift */,
+				13177D9524F3D2FF00E5915F /* Player.swift */,
+				1332647724E5CA4100A4ABFE /* Tools.swift */,
+			);
+			path = Watata_run;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		134D210C24E5C5A100A48968 /* Watata_run */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 134D211424E5C5A100A48968 /* Build configuration list for PBXNativeTarget "Watata_run" */;
+			buildPhases = (
+				134D210924E5C5A100A48968 /* Sources */,
+				134D210A24E5C5A100A48968 /* Frameworks */,
+				134D210B24E5C5A100A48968 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Watata_run;
+			productName = Watata_run;
+			productReference = 134D210D24E5C5A100A48968 /* Watata_run */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		134D210524E5C5A100A48968 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = bouh;
+				TargetAttributes = {
+					134D210C24E5C5A100A48968 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+				};
+			};
+			buildConfigurationList = 134D210824E5C5A100A48968 /* Build configuration list for PBXProject "Watata_run" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 134D210424E5C5A100A48968;
+			productRefGroup = 134D210E24E5C5A100A48968 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				134D210C24E5C5A100A48968 /* Watata_run */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		134D210924E5C5A100A48968 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				132C101024F5852900C21608 /* VFour.swift in Sources */,
+				1332647A24E82E6A00A4ABFE /* Moto.swift in Sources */,
+				132C100B24F5841900C21608 /* Nobrake.swift in Sources */,
+				13A92E4424EAF9800037E4FF /* Motor.swift in Sources */,
+				132C101424F585A400C21608 /* Twin.swift in Sources */,
+				134D211124E5C5A100A48968 /* main.swift in Sources */,
+				1332647424E5C6CF00A4ABFE /* Game.swift in Sources */,
+				13177D9624F3D2FF00E5915F /* Player.swift in Sources */,
+				1332647C24E8355700A4ABFE /* Yamawaki.swift in Sources */,
+				1332647824E5CA4100A4ABFE /* Tools.swift in Sources */,
+				132C101824F5873600C21608 /* Dieudlapan.swift in Sources */,
+				13177D9824F4545800E5915F /* VTwin.swift in Sources */,
+				132C101A24F587A100C21608 /* MowerBrand.swift in Sources */,
+				132C101624F5863100C21608 /* Compressor.swift in Sources */,
+				132C101224F5858900C21608 /* FourCyl.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		134D211224E5C5A100A48968 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		134D211324E5C5A100A48968 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		134D211524E5C5A100A48968 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		134D211624E5C5A100A48968 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		134D210824E5C5A100A48968 /* Build configuration list for PBXProject "Watata_run" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				134D211224E5C5A100A48968 /* Debug */,
+				134D211324E5C5A100A48968 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		134D211424E5C5A100A48968 /* Build configuration list for PBXNativeTarget "Watata_run" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				134D211524E5C5A100A48968 /* Debug */,
+				134D211624E5C5A100A48968 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 134D210524E5C5A100A48968 /* Project object */;
+}
