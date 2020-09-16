@@ -166,7 +166,7 @@ class	Game  //crash if many bike have same name
 			var choice: Int
 			var check = true
 			var name: String
-
+			
 			repeat {
 				choice = Tools.shared.readLineInt()
 			} while !(1...4 ~= choice)
@@ -174,40 +174,48 @@ class	Game  //crash if many bike have same name
 			repeat {
 				name = askName(message: "name your bike")
 				
-				for moto in team {
-					print("\n\nAWDBWAKJBDKJHAWBDHJKAWBDKJWAB\n\n")
-					check = true
-					print("**********\(moto.name)************")
+				check = true
+				team.forEach { (moto) in
 					if moto.name == name {
-						print("name already taken, choose another")
 						check = false
 					}
 				}
-		} while check != true
-		//---------------------mais ca marche pas---------------------------------
-		switch choice {
-		case 1:
-			team.append(createYamasaki(name: name))
-		case 2:
-			team.append(createNobrake(name: name))
-		case 3:
-			team.append(createDieudlapan(name: name))
-		case 4:
-			team.append(createMowerBrand(name: name))
-		default:
-			print("Error");
-		}
-	} while team.count < 3
+				
+//				for moto in team {
+////					print("\n\nAWDBWAKJBDKJHAWBDHJKAWBDKJWAB\n\n")
+////					check = true
+////					print("**********\(moto.name)************")
+//					if moto.name == name {
+//						print("name already taken, choose another")
+//						check = false
+//					}
+//				}
+				
+			} while check != true
+			//---------------------mais ca marche pas---------------------------------
+			switch choice {
+			case 1:
+				team.append(createYamasaki(name: name))
+			case 2:
+				team.append(createNobrake(name: name))
+			case 3:
+				team.append(createDieudlapan(name: name))
+			case 4:
+				team.append(createMowerBrand(name: name))
+			default:
+				print("Error");
+			}
+		} while team.count < 3
+		
+		Tools.shared.testPrintTeam(team: team)
+		print("----------END\n----------") //debug
+		return team
+	}
 	
-	Tools.shared.testPrintTeam(team: team)
-	print("----------END\n----------") //debug
-	return team
-}
-
-
-func displayWinner(win: Player, los: Player) {
-	print("win: \(win.name)\nlos: \(los.name)\n")
-}
+	
+	func displayWinner(win: Player, los: Player) {
+		print("win: \(win.name)\nlos: \(los.name)\n")
+	}
 }
 
 
