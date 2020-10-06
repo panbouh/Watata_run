@@ -21,6 +21,7 @@
 		1332647A24E82E6A00A4ABFE /* Moto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1332647924E82E6A00A4ABFE /* Moto.swift */; };
 		1332647C24E8355700A4ABFE /* Yamawaki.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1332647B24E8355700A4ABFE /* Yamawaki.swift */; };
 		134D211124E5C5A100A48968 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134D211024E5C5A100A48968 /* main.swift */; };
+		135FACAA252C98430094C134 /* trash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135FACA9252C98430094C134 /* trash.swift */; };
 		13A92E4424EAF9800037E4FF /* Motor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A92E4324EAF9800037E4FF /* Motor.swift */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +53,7 @@
 		1332647B24E8355700A4ABFE /* Yamawaki.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Yamawaki.swift; sourceTree = "<group>"; };
 		134D210D24E5C5A100A48968 /* Watata_run */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Watata_run; sourceTree = BUILT_PRODUCTS_DIR; };
 		134D211024E5C5A100A48968 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		135FACA9252C98430094C134 /* trash.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = trash.swift; sourceTree = "<group>"; };
 		13A92E4324EAF9800037E4FF /* Motor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Motor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -116,6 +118,7 @@
 				1332647324E5C6CF00A4ABFE /* Game.swift */,
 				13177D9524F3D2FF00E5915F /* Player.swift */,
 				1332647724E5CA4100A4ABFE /* Tools.swift */,
+				135FACA9252C98430094C134 /* trash.swift */,
 			);
 			path = Watata_run;
 			sourceTree = "<group>";
@@ -186,6 +189,7 @@
 				134D211124E5C5A100A48968 /* main.swift in Sources */,
 				1332647424E5C6CF00A4ABFE /* Game.swift in Sources */,
 				13177D9624F3D2FF00E5915F /* Player.swift in Sources */,
+				135FACAA252C98430094C134 /* trash.swift in Sources */,
 				1332647C24E8355700A4ABFE /* Yamawaki.swift in Sources */,
 				1332647824E5CA4100A4ABFE /* Tools.swift in Sources */,
 				132C101824F5873600C21608 /* Dieudlapan.swift in Sources */,
