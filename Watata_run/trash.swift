@@ -8,7 +8,7 @@
 
 import Foundation
 
-////ask player with what moto attak
+//ask player with what moto attak
 //print("Select your runner\n")
 //P1.printMotoInLife()
 //var runner = Tools.shared.makeChoiceInt(between: 1...P1.motoInLife.count) //On a le droit de faire ca?? :o (range)
@@ -21,8 +21,8 @@ import Foundation
 ////lunch run
 //run(runner: runner, oppenent: oppenent)
 //whoTurn = false
-
-
+//
+//
 //print("------- \(attak.name) turn. team : \(attak.motoInLife.count)----\n")
 //
 //let boostChest = Bool.random()
