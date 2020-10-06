@@ -21,7 +21,6 @@
 		1332647A24E82E6A00A4ABFE /* Moto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1332647924E82E6A00A4ABFE /* Moto.swift */; };
 		1332647C24E8355700A4ABFE /* Yamawaki.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1332647B24E8355700A4ABFE /* Yamawaki.swift */; };
 		134D211124E5C5A100A48968 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134D211024E5C5A100A48968 /* main.swift */; };
-		135FACAA252C98430094C134 /* trash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135FACA9252C98430094C134 /* trash.swift */; };
 		13A92E4424EAF9800037E4FF /* Motor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A92E4324EAF9800037E4FF /* Motor.swift */; };
 /* End PBXBuildFile section */
 
@@ -189,7 +188,6 @@
 				134D211124E5C5A100A48968 /* main.swift in Sources */,
 				1332647424E5C6CF00A4ABFE /* Game.swift in Sources */,
 				13177D9624F3D2FF00E5915F /* Player.swift in Sources */,
-				135FACAA252C98430094C134 /* trash.swift in Sources */,
 				1332647C24E8355700A4ABFE /* Yamawaki.swift in Sources */,
 				1332647824E5CA4100A4ABFE /* Tools.swift in Sources */,
 				132C101824F5873600C21608 /* Dieudlapan.swift in Sources */,
