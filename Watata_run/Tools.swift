@@ -36,4 +36,19 @@ class Tools	{
 			print("\(index + 1) : \(moto.name) (\(moto.type) \(moto.life) LP - (\(moto.motor.power)) WD")
 		}
 	}
+	
+	func makeChoiceInt(between: ClosedRange<Int>) -> Int
+	{
+		var choice: Int = 0
+		var fistTime: Bool = true
+		
+		repeat {
+			if !fistTime {
+				print("Incorrect choice, please select other\n")
+			}
+			choice = Tools.shared.readLineInt()
+			fistTime = false
+		} while !(between ~= choice)
+		return choice
+	}
 }

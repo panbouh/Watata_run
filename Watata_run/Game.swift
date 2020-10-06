@@ -26,12 +26,12 @@ class	Game  //crash if many bike have same name
 		guard let P2 = Player2 else {return}
 		repeat {
 			
-			if (whoTurn) {// P1 Turn
-				run(attak: P1, victim: P2)
+			if (whoTurn) {			// P1 Turn
+				turn(Runner: P1, Oppenent: P2)
 				whoTurn = false
 			}
-			else if (!whoTurn) {
-				run(attak: P2, victim: P1)
+			else if (!whoTurn) {	// P2 Turn
+				turn(Runner: P2, Oppenent: P1)
 				whoTurn = true
 			}
 			
@@ -48,27 +48,37 @@ class	Game  //crash if many bike have same name
 		//		displayWinner(win: P1.nbDies>P2.nbDies, los: P2.nbDies>P1.nbDies)
 	}
 	
-	func run(attak: Player, victim: Player) {
-		print("------- \(attak.name) turn. team : \(attak.motoInLife.count)----\n")
+	func turn(Runner: Player, Oppenent: Player)
+	{
+		//ask player with what moto attak
+		print("Select your runner\n")
+		Runner.printMotoInLife()
+		let run = Tools.shared.makeChoiceInt(between: 1...Runner.motoInLife.count) //On a le droit de faire ca?? :o (range)
 		
+		//ask player who attack with
+		print("Select your oppenent\n")
+		Oppenent.printMotoInLife()
+		let opp = Tools.shared.makeChoiceInt(between: 1...Oppenent.motoInLife.count)
+		
+		//lunch run
+		LunchRun(attak: Runner.motoInLife[run-1], victim: Oppenent.motoInLife[opp-1], vicOwn: Oppenent)
+	}
+	
+	func LunchRun(attak: Moto, victim: Moto, vicOwn: Player) {
 		let boostChest = Bool.random()
 		
-		
-		guard let bam = attak.motoInLife.first else {return}
-		guard let aie = victim.motoInLife.first else {return}
-		
-		let oldMotor = bam.motor
+		let oldMotor = attak.motor
 		if boostChest {
-			print("+++++++++++++++++++++\nOh! A treasure chest is appear, it contain a COMPRESSOR\n"
+			print("+++++++++++++++++++++\nOh! Someone throw a COMPRESSOR on the track !\n"
 				+ "\(attak.name) Equiped it on his bike!\n++++++++++++++++++\n")
-			bam.motor = Compressor()
+			attak.motor = Compressor()
 		}
 		
-		bam.gaz(target: aie, player: victim)
+		attak.gaz(target: victim, player: vicOwn)
 		
 		if (boostChest) {
-			print("\(attak.name) lost his compressor")
-			bam.motor = oldMotor
+			print("\(attak.name) trow away his compressor, not seen not caught.\n")
+			attak.motor = oldMotor
 		}
 		print("------------------------\n")
 	}
@@ -167,24 +177,24 @@ class	Game  //crash if many bike have same name
 			var check = true
 			var name: String
 			
-			repeat {
-				choice = Tools.shared.readLineInt()
-			} while !(1...4 ~= choice)
-			//----------------------check les double nom-----------------------------
+//			repeat {
+//				choice = Tools.shared.readLineInt()
+//			} while !(1...4 ~= choice)
+			choice = Tools.shared.makeChoiceInt(between: 1...4)
+			
 			repeat {
 				name = askName(message: "name your bike")
 				
 				check = true
 				team.forEach { (moto) in
 					if moto.name == name {
+						print("name already taken, choose another")
 						check = false
 					}
 				}
 				
+//				check = true
 //				for moto in team {
-////					print("\n\nAWDBWAKJBDKJHAWBDHJKAWBDKJWAB\n\n")
-////					check = true
-////					print("**********\(moto.name)************")
 //					if moto.name == name {
 //						print("name already taken, choose another")
 //						check = false
@@ -192,7 +202,7 @@ class	Game  //crash if many bike have same name
 //				}
 				
 			} while check != true
-			//---------------------mais ca marche pas---------------------------------
+			
 			switch choice {
 			case 1:
 				team.append(createYamasaki(name: name))
