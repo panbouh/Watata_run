@@ -31,11 +31,11 @@ class Tools	{
 		return strDataInt
 	}
 	
-	func testPrintTeam(team: [Moto]) {
-		team.enumerated().forEach { (index, moto) in
-			print("\(index + 1) : \(moto.name) (\(moto.type) \(moto.life) LP - (\(moto.motor.power)) WD")
-		}
-	}
+//	func testPrintTeam(team: [Moto]) {
+//		team.enumerated().forEach { (index, moto) in
+//			print("\(index + 1) : \(moto.name) (\(moto.type) \(moto.life) LP - (\(moto.motor.power)) WD")
+//		}
+//	}
 	
 	func makeChoiceInt(between: ClosedRange<Int>) -> Int
 	{

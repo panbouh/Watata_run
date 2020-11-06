@@ -24,11 +24,11 @@ class Moto {
 	func gaz(target: Moto, player: Player) {			// Attaque
 		target.life -= motor.power
 		
-		print("\(self.name) attaque \(target.name) pour \(target.motor.power) damage\n")
+		print("\(self.name) pass \(target.name) for \(target.motor.power) KM\n")
 		
 		if target.life <= 0 {
 			target.life = 0
-			print("/!\\ \(target.name) of \(player.name) is dead /!\\")
+			print("Oh ! \(target.name) of \(player.name) is out of the race !")
 			player.nbDies += 1
 			player.motoInLife.removeAll { (moto) -> Bool in
 				return target.name == moto.name ? true : false
@@ -36,9 +36,4 @@ class Moto {
 			player.motoDead.append(target)
 		}
 	}
-
-//	func getOverpassed (byWho: Motor) {	// Attaque
-//		self.speed -= byWho.power
-//			print("\(self.brand)")
-//	}
 }
