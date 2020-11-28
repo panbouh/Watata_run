@@ -46,8 +46,6 @@
 		132C101524F5863100C21608 /* Compressor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Compressor.swift; sourceTree = "<group>"; };
 		132C101724F5873600C21608 /* Dieudlapan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dieudlapan.swift; sourceTree = "<group>"; };
 		132C101924F587A100C21608 /* MowerBrand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MowerBrand.swift; sourceTree = "<group>"; };
-		13300741253769740085DCDF /* display */ = {isa = PBXFileReference; lastKnownFileType = text; path = display; sourceTree = "<group>"; };
-		13300742253769C30085DCDF /* displayFinal.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = displayFinal.txt; sourceTree = "<group>"; };
 		1332647324E5C6CF00A4ABFE /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		1332647724E5CA4100A4ABFE /* Tools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tools.swift; sourceTree = "<group>"; };
 		1332647924E82E6A00A4ABFE /* Moto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Moto.swift; sourceTree = "<group>"; };
@@ -120,8 +118,6 @@
 				13177D9524F3D2FF00E5915F /* Player.swift */,
 				1332647724E5CA4100A4ABFE /* Tools.swift */,
 				135FACA9252C98430094C134 /* trash.swift */,
-				13300741253769740085DCDF /* display */,
-				13300742253769C30085DCDF /* displayFinal.txt */,
 			);
 			path = Watata_run;
 			sourceTree = "<group>";

@@ -12,18 +12,3 @@ let game = Game()
 
 game.create()
 game.start()
-
-//repeat {
-//	let choice = Tools.shared.makeChoiceInt(between: 1...4)
-//	print ("your choice: \(choice)")
-//} while (true)
-
-/*
-	Tour/tour reelememt jouable
-
-	travail perso : Apprendre methode swift (hacking with swift)
-
-	diagram :
-	-
-
-*/

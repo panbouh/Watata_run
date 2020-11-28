@@ -18,7 +18,7 @@ class Tools	{
 		let str = readLine()
 		
 		guard let strData = str else { return "Error" }
-
+		
 		return strData
 	}
 	
@@ -27,15 +27,9 @@ class Tools	{
 		let str = readLine()
 		
 		guard let strData = str, let strDataInt = Int(strData) else { return -1 }
-
+		
 		return strDataInt
 	}
-	
-//	func testPrintTeam(team: [Moto]) {
-//		team.enumerated().forEach { (index, moto) in
-//			print("\(index + 1) : \(moto.name) (\(moto.type) \(moto.life) LP - (\(moto.motor.power)) WD")
-//		}
-//	}
 	
 	func makeChoiceInt(between: ClosedRange<Int>) -> Int
 	{
@@ -50,5 +44,16 @@ class Tools	{
 			fistTime = false
 		} while !(between ~= choice)
 		return choice
+	}
+	
+	func randNb() -> Bool {
+		let nb: Int = Int.random(in: 1...10)
+		
+		if (nb > 2) {
+			return false
+		}
+		else {
+			return true
+		}
 	}
 }

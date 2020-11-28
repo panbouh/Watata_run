@@ -34,10 +34,7 @@ class	Game
 		let p2Name = askName(message: "-Runner 2 Annonce your name-")
 		print("\n")
 		print("#---------------------------------------------------#\n")
-		//		print("p1 = \(p1Name)\np2 = \(p2Name)\n")
-		
-		//		print("wewewelll wellll! Now tell us with what beast you will figt!\n")
-		
+
 		// Initialize PLayer 1
 		let p1Team = selectTeam(who: p1Name)
 		Player1 = Player(name: p1Name, team: p1Team)
@@ -82,6 +79,7 @@ class	Game
 		var whoTurn = true
 		guard let P1 = Player1 else {return}
 		guard let P2 = Player2 else {return}
+		
 		repeat {
 			nbTurn += 1
 			if (whoTurn) {			// P1 Turn
@@ -118,13 +116,13 @@ class	Game
 	}
 	
 	func LunchRun(attak: Moto, victim: Moto, attOwn: Player, vicOwn: Player) {
-		let boostChest = Bool.random()
+		let boostChest: Bool = Tools.shared.randNb()
 		
 		let oldMotor = attak.motor
 		if boostChest {
 			print("/!\\ ------------------------------------------------/!\\\n" +
-					"|  Oh! Someone throw a COMPRESSOR on the track !  |\n" +
-					"|  \(attak.name) Equiped it on his bike!      |\n" +
+					"   Oh! Someone throw a COMPRESSOR on the track !\n" +
+					"   \(attak.name) Equiped it on his bike!\n" +
 					"/!\\ ------------------------------------------------/!\\\n")
 			attak.motor = Compressor()
 		}
@@ -211,7 +209,6 @@ class	Game
 	
 	func displayWinner(win: Player, los: Player) {
 		print("\n#---------------------------------------------------#\n\n")
-		//\n
 		print("And we have a WIIIINEER, \(win.name) have run over all his oppenemt team !\n" +
 				"Thanks you for you to come here, and see you to the next run !\n" +
 				"\n")
