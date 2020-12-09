@@ -31,6 +31,7 @@ class Tools	{
 		return strDataInt
 	}
 	
+	// Be sure that the Int given by the user is correct
 	func makeChoiceInt(between: ClosedRange<Int>) -> Int
 	{
 		var choice: Int = 0
@@ -46,6 +47,7 @@ class Tools	{
 		return choice
 	}
 	
+	// Conditional random
 	func randNb() -> Bool {
 		let nb: Int = Int.random(in: 1...10)
 		

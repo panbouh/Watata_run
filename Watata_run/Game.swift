@@ -80,6 +80,7 @@ class	Game
 		guard let P1 = Player1 else {return}
 		guard let P2 = Player2 else {return}
 		
+		// Main loop
 		repeat {
 			nbTurn += 1
 			if (whoTurn) {			// P1 Turn
@@ -92,6 +93,7 @@ class	Game
 			}
 		} while P1.nbDies != 3 && P2.nbDies != 3
 		
+		// End of game
 		if (P1.nbDies > P2.nbDies) {
 			displayWinner(win: P2, los: P1)
 		} else {
@@ -118,6 +120,7 @@ class	Game
 	func LunchRun(attak: Moto, victim: Moto, attOwn: Player, vicOwn: Player) {
 		let boostChest: Bool = Tools.shared.randNb()
 		
+		// Random chest feature
 		let oldMotor = attak.motor
 		if boostChest {
 			print("/!\\ ------------------------------------------------/!\\\n" +
@@ -129,6 +132,7 @@ class	Game
 		
 		attak.gaz(target: victim, player: vicOwn)
 		
+		// Remove avantage from random chest
 		if (boostChest) {
 			print("\(attak.name) trow away his compressor, not seen not caught.\n")
 			attak.motor = oldMotor
@@ -166,6 +170,7 @@ class	Game
 		
 		print("-\(who) Choose your team-")
 		
+		// Ask the team
 		repeat {
 			print("Choose your \(team.count + 1) bike :\n"
 					+ "1. Yamasaki\n"
@@ -177,12 +182,15 @@ class	Game
 			var check = true
 			var name: String
 			
+			// Be sure that the Int given by the user is correct
 			choice = Tools.shared.makeChoiceInt(between: 1...4)
 			
 			repeat {
+				// Be sure that the name given by the user is correct
 				name = askName(message: "-name your bike-")
 				
 				check = true
+				// Be sure that the name given by the user isn't alreasy taken
 				team.forEach { (moto) in
 					if moto.name == name {
 						print("/!\\ name already taken, choose another /!\\")
@@ -224,7 +232,5 @@ class	Game
 		print("\n\n\n\n\n" +
 				"\(win.name) had cheated \(win.nbCheated) time, \(los.name) \(los.nbCheated) time.)\n" +
 				"#---------------------------------------------------#\n")
-		
-		
 	}
 }

@@ -15,7 +15,6 @@ class Motor {
 	var power: Int
 	
 	//Initialize
-	
 	init(name: String, power: Int) {
 		self.name = name
 		self.power = power

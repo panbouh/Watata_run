@@ -20,8 +20,8 @@ class Moto {
 		self.life = life
 		self.motor = motor
 	}
-	
-	func gaz(target: Moto, player: Player) {			// Attaque
+	// Attaque
+	func gaz(target: Moto, player: Player) {
 		target.life -= motor.power
 		
 		print("\(self.name) pass \(target.name) for \(target.motor.power) KM\n")

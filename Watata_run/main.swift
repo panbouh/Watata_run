@@ -10,5 +10,7 @@ import Foundation
 
 let game = Game()
 
+// Initialise game
 game.create()
+//lunch game
 game.start()
