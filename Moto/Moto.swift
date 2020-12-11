@@ -11,12 +11,14 @@ import Foundation
 class Moto {
 	var name: String
 	var type: String
+	var lifeMax: Int
 	var life: Int
 	var motor: Motor		//wapeons
 	
-	init(name: String, type: String, life: Int, motor: Motor) {
+	init(name: String, type: String, life: Int, lifeMax:Int, motor: Motor) {
 		self.name = name
 		self.type = type
+		self.lifeMax = lifeMax
 		self.life = life
 		self.motor = motor
 	}
@@ -35,5 +37,21 @@ class Moto {
 			}
 			player.motoDead.append(target)
 		}
+	}
+	
+	func heal() {
+		let percentHeal = lifeMax * 12 / 100
+		
+		life += percentHeal
+		
+		//Check if overflow for life
+		if (life > lifeMax)
+		{
+			life = lifeMax
+		}
+
+		print("\(name) stay at the paddoc, need check-up !")
+		print("\(name) be repaired for \(percentHeal) KM\n")
+		print("\(name) km : \(life)")
 	}
 }

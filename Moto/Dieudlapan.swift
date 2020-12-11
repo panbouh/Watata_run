@@ -11,10 +11,11 @@ import Foundation
 class Dieudlapan: Moto {
 	
 	static let type = "Dieudlapan"
+	static let lifeMax = 500
 	static let life = 500
 	static let motor = VFour()
 	
 	init(name: String){
-		super.init(name: name, type: "Dieudlapan", life: 500, motor: VFour())
+		super.init(name: name, type: "Dieudlapan", life: 500, lifeMax: 500, motor: VFour())
 	}
 }

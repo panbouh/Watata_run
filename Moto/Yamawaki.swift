@@ -11,10 +11,11 @@ import Foundation
 class Yamasaki: Moto {
 	
 	static let type = "Yamasaki"
+	static let lifeMax = 800
 	static let life = 800
 	static let motor = FourCyl()
 	
 	init(name: String){
-		super.init(name: name, type: "Yamasaki", life: 800, motor: FourCyl())
+		super.init(name: name, type: "Yamasaki", life: 800, lifeMax: 800, motor: FourCyl())
 	}
 }

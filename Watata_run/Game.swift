@@ -109,12 +109,32 @@ class	Game
 		let run = Tools.shared.makeChoiceInt(between: 1...Runner.motoInLife.count)
 		
 		//ask player who attack with
-		print("-Select your oppenent-\n")
+		print("-Select your oppenent-\n\n   0 : Stay Stand to be repaired\n")
 		Oppenent.printMotoInLife()
-		let opp = Tools.shared.makeChoiceInt(between: 1...Oppenent.motoInLife.count)
+		let opp = Tools.shared.makeChoiceInt(between: 0...Oppenent.motoInLife.count)
 		
 		//lunch run
-		LunchRun(attak: Runner.motoInLife[run-1], victim: Oppenent.motoInLife[opp-1], attOwn: Runner, vicOwn: Oppenent)
+		//		if heal
+		if (opp == 0)
+		{
+			StayPaddoc(Broken: Runner.motoInLife[run-1])
+		}
+		else
+		{
+			LunchRun(attak: Runner.motoInLife[run-1], victim: Oppenent.motoInLife[opp-1], attOwn: Runner, vicOwn: Oppenent)
+		}
+	}
+	
+	func StayPaddoc(Broken: Moto)
+	{
+		if (Broken.life >= Broken.lifeMax)
+		{
+			print("Your bike if fine, go run.")
+		}
+		else
+		{
+			Broken.heal()
+		}
 	}
 	
 	func LunchRun(attak: Moto, victim: Moto, attOwn: Player, vicOwn: Player) {

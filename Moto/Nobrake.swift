@@ -11,10 +11,11 @@ import Foundation
 class Nobrake: Moto {
 	
 	static let type = "Nobrake"
+	static let lifeMax = 1000
 	static let life = 1000
 	static let motor = VTwin()
 	
 	init(name: String){
-		super.init(name: name, type: "Nobrake", life: 1000, motor: VTwin())
+		super.init(name: name, type: "Nobrake", life: 1000, lifeMax: 1000, motor: VTwin())
 	}
 }
